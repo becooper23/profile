@@ -1,0 +1,87 @@
+/*
+GLOBAL
+*/
+*,
+*::after,
+*::before{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+}
+
+
+body{
+        font-family:'Roboto', sans-serif;
+        color:pink;
+        font-weight:300;
+        line-height:1.6;
+}
+
+ul{
+        list-style:none;
+}
+a{
+        text-decoration:underline;
+}
+.social{
+        color:#eb34eb;
+}
+img{
+        height:8rem;
+}
+img:hover{
+        height:10rem;
+        transition:all .3s;
+}
+.img-round{
+        border-radius:50%;
+        border:5px solid pink;
+        /* text-align:center; */
+}
+
+/* GLOBAL */
+
+.container{
+        height:100%;
+        display:grid;
+        grid-template-areas:
+        'header header header header header header'
+        'menu main main main  main right  '
+        'menu footer footer footer footer footer ';
+        background-color: black;
+        grid-gap:10px;
+}
+.header{
+        grid-area:header;
+     	background-image:https://www.timelinecoverphotomaker.com/sites/default/files/facebook-cover-photos/2013/11/pink-flower-tree-facebook-cover-photo.jpg;
+        background-size:cover;
+        background-position:center;
+        display:grid;
+        align-items:center;
+        justify-content:center;
+        padding-top:1rem;
+
+}
+
+.profile{
+        display:grid;
+        justify-items:center;
+        justify-content:center
+}
+
+.menu{
+grid-area:menu;
+margin-left:2rem;
+}
+.main{
+grid-area:main;
+display:grid;
+justify-content: center;
+align-items:center;
+}.right{
+        grid-area:right;
+
+}
+.footer{
+        grid-area:footer;
+}
